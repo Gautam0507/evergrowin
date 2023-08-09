@@ -6,6 +6,8 @@ export default {
       Purple: "#9036D2",
       White: "#FFFFFF",
       Black: "#000000",
+      Grey: "#f0f0f0",
+      DarkGrey: "#5A5A5A",
     },
     extend: {},
   },

@@ -1,5 +1,4 @@
 import React from "react";
-import Bullet from "../assets/images/bullet.png";
 
 const TradeBox = (props) => {
   return (

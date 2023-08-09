@@ -9,12 +9,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/order" element={<ChamoisLeatherOrder />} />
           <Route
-            path="/order/chamoisLeather"
-            element={<ChamoisLeatherOrder />}
-          />
-          <Route
-            path="/product/chamoisLeather"
+            path="/products/chamoisLeather"
             element={<ChamoisLeatherDescription />}
           />
         </Routes>
