@@ -45,7 +45,7 @@ const OrderForm = () => {
   return (
     <>
       <div className="container m-auto">
-        <p className="text-center px-2 text-xl font-medium leading-6 md:text-2xl lg:text-3xl lg:my-4">
+        <p className="text-center px-2 text-xl font-medium leading-6 md:text-2xl lg:text-3xl lg:my-4 2xl:text-4xl">
           We're thrilled that you're interested in our products. Please fill out
           the form below with your details, and we will get back to you as soon
           as possible to assist you with your purchase.
