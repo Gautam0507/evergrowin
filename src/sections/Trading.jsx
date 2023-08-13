@@ -6,7 +6,7 @@ const Trading = () => {
     {
       id: 1,
       title: "Shoe Industry",
-      description: ["Mould release agents","Liquid pigments for shoes"],
+      description: ["Mould release agents", "Liquid pigments for shoes"],
     },
     {
       id: 2,
@@ -31,9 +31,11 @@ const Trading = () => {
   ];
   return (
     <>
-      <div className="container m-auto">
-        <h1 className="text-5xl text-center my-4 font-semibold">Trading</h1>
-        <div className="grid grid-cols-2 gap-5 place-items-center">
+      <div className="container m-auto space-y-5">
+        <h1 className="font-bold text-3xl text-center mt-4 lg:text-4xl">
+          Trading
+        </h1>
+        <div className="flex flex-col justify-between gap-5 mx-3 lg:grid lg:grid-cols-2 mb-3">
           {items.map((item) => {
             return <TradeBox item={item} key={item.id} />;
           })}

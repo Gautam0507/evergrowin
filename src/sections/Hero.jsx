@@ -2,18 +2,18 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" bg-Purple max-h-fit flex">
-      <div className="container m-auto flex justify-between my-10">
-        <div className="flex flex-col justify-around">
-          <div className="font-bold text-8xl text-White">
+    <div className="bg-Purple max-h-fit">
+      <div className="container m-auto">
+        <div className="ml-3 lg:flex lg:flex-col lg:gap-10 lg:text-center">
+          <div className="font-bold text-7xl text-White lg:text-8xl">
             Lorem Ipsum Slogan
           </div>
-          <div className="font-bold text-7xl text-White">
-            Lorem Ipsum Slogan
+          <div className="font-bold text-6xl text-White pb-10 lg:text-7xl">
+            Lorem Ipsum Description
           </div>
         </div>
 
-        <div className="">
+        {/* <div className="">
           <svg
             width="520"
             height="431"
@@ -27,7 +27,7 @@ const Hero = () => {
               fill="black"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
     </div>
   );

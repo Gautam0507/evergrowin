@@ -85,7 +85,7 @@ const ChamoisLeatherDescription = () => {
                 </li>
               </ul>
               <Link to="/order" className="text-xl text-White font-semibold ">
-                <button className="min-w-full bg-Purple mt-3 rounded-xl py-1 mb-3">
+                <button className="min-w-full bg-Purple mt-3 rounded-xl py-1 mb-3 hover:bg-White hover:text-Purple hover:border-Purple hover:border-2 hover:shadow-lg hover:transition-all duration-500 ease-in-out">
                   Order
                 </button>
               </Link>

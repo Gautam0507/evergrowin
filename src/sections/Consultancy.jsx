@@ -22,10 +22,10 @@ const Consultancy = () => {
   return (
     <div className="bg-Purple">
       <div className="container mx-auto">
-        <h1 className="text-5xl text-center my-4 font-semibold text-White">
+        <h1 className="text-3xl text-White text-center font-bold my-4 lg:text-4xl py-2">
           Consultancy
         </h1>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="flex flex-col justify-between gap-3 mx-3 lg:grid lg:grid-cols-2 ">
           {items.map((item) => {
             return <ConsultComp item={item} key={item.id} />;
           })}

@@ -189,7 +189,7 @@ const OrderForm = () => {
 
           <button
             type="submit"
-            className=" my-2 rounded-lg font-semibold text-2xl text-center bg-Purple text-White lg:mt-3"
+            className=" my-2 rounded-lg font-semibold text-2xl text-center py-1 bg-Purple text-White lg:mt-3  hover:bg-White hover:border-2 hover:border-Purple  hover:text-Purple hover:shadow-lg hover:transition-all duration-500 ease-in-out"
           >
             Submit
           </button>
