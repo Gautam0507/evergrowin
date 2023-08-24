@@ -40,5 +40,11 @@
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
+  },
+  "csp": {
+    "font-src": [
+      "'self'",
+      "https://fonts.googleapis.com"
+    ]
   }
 }
