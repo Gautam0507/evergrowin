@@ -1,9 +1,12 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { db } from "../config/firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 const ContactUsForm = () => {
+  // TODO: replace the ref properly when deploying
+  const contactRef = collection(db, "Contact");
   const schema = yup.object().shape({
     name: yup.string("Enter a valid string").required("Your Name is required"),
     phoneNumber: yup
@@ -23,13 +26,18 @@ const ContactUsForm = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  const onSubmmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    try {
+      await addDoc(contactRef, data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <>
       <form
-        onSubmit={handleSubmit(onSubmmit)}
+        onSubmit={handleSubmit(onSubmit)}
         className="text-White text-lg mx-2 mb-3 md:mx-20"
       >
         <div className="w-full">

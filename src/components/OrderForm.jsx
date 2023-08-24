@@ -3,8 +3,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { items } from "../assets/Items";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../config/firebase";
 
 const OrderForm = () => {
+  // TODO: replace the ref properly when deploying
+  const OrderRef = collection(db, "Order");
   const schema = yup.object().shape({
     Name: yup
       .string("Please enter a valid name")
@@ -38,8 +42,13 @@ const OrderForm = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    try {
+      await addDoc(OrderRef, data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

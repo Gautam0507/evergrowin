@@ -2,6 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ["Poppins"],
+      serif: ["Poppins"],
+      mono: ["Poppins"],
+    },
     colors: {
       Purple: "#9036D2",
       White: "#FFFFFF",

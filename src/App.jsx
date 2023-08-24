@@ -1,5 +1,5 @@
 import Homepage from "./pages/Homepage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ChamoisLeatherOrder from "./pages/productOrderPages/ChamoisLeatherOrder";
 import ChamoisLeatherDescription from "./pages/productDescriptionPages/ChamoisLeatherDescription";
 
